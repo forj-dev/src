@@ -1,0 +1,36 @@
+
+<div>
+
+<h1>How much should MuffinSong return to...?</h1>
+<div>
+<h2>To laba</h2>
+<p>pokemon: 40</p>
+<p>hit laba:     99</p>
+<p>sum:          139</p>
+<p id="i1"></p>
+<p id="t1"></p>
+</div>
+<div>
+<h2>To bzn</h2>
+<p>dinner1:       40</p>
+<p>dinner2:       90</p>
+<p>sum:             130</p>
+<p id="i2"></p>
+<p id="t2"></p>
+</div>
+
+</div>
+
+<script>
+function upd(){
+t1=new Date().getTime()/1000000-1718800
+document.getElementById("i1").innerHTML="tax:  139 * "+t1+"% = "+139*t1/100;
+t2=new Date().getTime()/999999-1718801
+document.getElementById("i2").innerHTML="tax:  130 * "+t2+"% = "+130*t2/100;
+document.getElementById("t1").innerHTML="total:  "+(139+139*t1/100);
+document.getElementById("t2").innerHTML="total:  "+(130+130*t1/100);
+setTimeout("upd()",950);
+}
+upd()
+</script>
+<noscript>please enable javascript</noscript>
